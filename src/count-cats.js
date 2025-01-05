@@ -17,7 +17,7 @@ const { NotImplementedError } = require("../extensions/index.js");
 function countCats(matrix) {
   let count = 0;
   for (let row of matrix) {
-    for (let cell of matrix) {
+    for (let cell of row) {
       if (cell === "^^") count++;
     }
   }
